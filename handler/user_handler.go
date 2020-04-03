@@ -40,7 +40,7 @@ var (
 func init() {
 	//open a db connection
 	var err error
-	DB, err = gorm.Open("postgres", "host=dev-driver-doc.cvzxvqrhtjgb.us-east-2.rds.amazonaws.com port=5432 user=postgres dbname=postgres password=driverdoc2019")
+	DB, err = gorm.Open("postgres", "host=localhost port=5432 user=postgres dbname=postgres password=123456")
 	if err != nil {
 		panic("failed to connect database")
 	}
